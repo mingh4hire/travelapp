@@ -35,7 +35,7 @@ th {
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name" required >
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="destination name" required >
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
@@ -48,8 +48,11 @@ th {
                 <div spacearound>
                 <table>
                     <tr>
-                        <th>Subjectivity:</th>
-                        <td><div id="subjectivity"></div></td>
+                        <th>Image:</th>
+                        <td><div id="img">
+                            <img id="image"/>
+
+                        </div></td>
                     </tr>
                     
                     <tr>

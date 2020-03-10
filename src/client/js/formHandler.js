@@ -8,7 +8,7 @@ function handleSubmit(event) {
         return;
     }
     console.log("::: Form Submitted :::")
-    fetch('/sentiment', {
+    fetch('/travel', {
             method: 'POST',
             body: JSON.stringify({
                 message: formText
@@ -27,11 +27,11 @@ function handleSubmit(event) {
         })
         .then(function (res) {
 
-            document.getElementById('polarity').innerHTML = res.polarity;
-            document.getElementById('subjectivity').innerHTML = res.subjectivity;
-            document.getElementById('text').innerHTML = res.text;
-            document.getElementById('polarity_confidence').innerHTML = res.polarity_confidence;
-            document.getElementById('subjectivity_confidence').innerHTML = res.subjectivity_confidence;
+            document.getElementById('image').src = res.image;
+            // document.getElementById('subjectivity').innerHTML = res.subjectivity;
+            // document.getElementById('text').innerHTML = res.text;
+            // document.getElementById('polarity_confidence').innerHTML = res.polarity_confidence;
+            // document.getElementById('subjectivity_confidence').innerHTML = res.subjectivity_confidence;
 
 
         })
