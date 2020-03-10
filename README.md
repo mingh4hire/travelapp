@@ -1,7 +1,7 @@
 this is the travel app aplication.
 
 You must run the webpack to build the app.
-Use the webpack build-dev.
+Use the npm run build-dev to build dev or use npm run build-prod for building prod.
 
 And then you must run the npm run start to begin the app on your local server.
 
