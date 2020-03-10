@@ -53,7 +53,7 @@ app.get('/test', function (req, res) {
             body = JSON.parse(body);
               datasendback.image = 
                  body.hits[0].webformatURL;
-                 const geourl ='http://api.geonames.org/wikipediaSearchJSON?formatted=true&maxRows=10&username=demo&style=full&q=';
+                 const geourl ='http://api.geonames.org/wikipediaSearchJSON?formatted=true&maxRows=10&username=mingh4hire&style=full&q=';
                  Request.get({
                      "headers": {
                          "content-type": "application/json"
@@ -89,9 +89,9 @@ app.get('/test', function (req, res) {
                                  }
                                  try {
                                      body = JSON.parse(body);
-                                     console.log('time p is ', body)
+                                     console.log('time p is ',  body)
                                      datasendback.temp = body.currently.temperature
-                         
+                                    console.log('data send back  is '  ,  datasendback);
                                      res.send(JSON.stringify(datasendback));
              
                                  } catch (err) {
@@ -116,22 +116,13 @@ app.get('/test', function (req, res) {
         }
 
     });
-   
+
    
     return;
 
 
 
-
-    if (!req.body.message) {
-        console.log('err is body empty');
-        res.status(400).send(
-            JSON.stringify({
-                error: 'bad input',
-                message: 'Bad Input'
-            }));
-        return;
-    }
+ 
     
 
 })
