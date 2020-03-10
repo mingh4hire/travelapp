@@ -28,7 +28,8 @@ function handleSubmit(event) {
         .then(function (res) {
 
             document.getElementById('image').src = res.image;
-            // document.getElementById('subjectivity').innerHTML = res.subjectivity;
+            document.getElementById('temp').innerHTML = res.temp;
+             // document.getElementById('subjectivity').innerHTML = res.subjectivity;
             // document.getElementById('text').innerHTML = res.text;
             // document.getElementById('polarity_confidence').innerHTML = res.polarity_confidence;
             // document.getElementById('subjectivity_confidence').innerHTML = res.subjectivity_confidence;
